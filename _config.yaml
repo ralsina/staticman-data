@@ -6,5 +6,5 @@ staticman:
  filename: "entry{@timestamp}"
  format: yml
  moderation: true
- path: "_data/reviews"
+ path: "_data/comments"
  requiredFields: ['name', 'title', 'description', 'rating']
