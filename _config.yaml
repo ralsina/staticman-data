@@ -1,6 +1,6 @@
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : # "master", "gh-pages"
+  branch                 : ["master", "comments"]
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
