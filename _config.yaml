@@ -1,16 +1,10 @@
+# Staticman
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+ allowedFields: ['name', 'title', 'description', 'rating']
+ branch: master
+ commitMessage: "Hey human, here is a new entry."
+ filename: "entry{@timestamp}"
+ format: yml
+ moderation: true
+ path: "_data/reviews"
+ requiredFields: ['name', 'title', 'description', 'rating']
