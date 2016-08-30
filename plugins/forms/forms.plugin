@@ -1,0 +1,14 @@
+[Core]
+Name = rest_forms
+Module = forms
+
+[Nikola]
+plugincategory = CompilerExtension
+Compiler = rest
+
+[Documentation]
+Author = Roberto Alsina
+Version = 0.1
+Website = http://getnikola.com
+Description = Alpaca-based forms for ReST.
+
