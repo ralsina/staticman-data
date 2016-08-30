@@ -9,6 +9,8 @@
 
 This is a demo of comments done using `Staticman <http://staticman.net>`__
 
+To see it in action, please click on the title `Sample Post ... <http://staticman-demo.netlify.com/posts/sample-post-with-staticman-comments.html>`__
+
 If you post a comment using the form below, it will be automatically saved in GitHub `here <https://github.com/ralsina/staticman-data/tree/master/data/entry-cache/posts>`__ and then, after a few seconds, `Netlify <http://netlify.com>`__ will pick up the change and rebuild and redeploy the site.
 
 In the Nikola site, there are special "shortcodes" that will pick up that data and display the comments in the right places.
