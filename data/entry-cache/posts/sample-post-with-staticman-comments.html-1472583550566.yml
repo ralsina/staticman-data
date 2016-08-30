@@ -1,0 +1,2 @@
+name: Chris Warrick
+comment: "Magic.\r\n\r\nHere’s some SQL Injection and XSS:\r\n' or 1=1 --\r\n<script>alert(1)</script>"
