@@ -6,10 +6,10 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <input type="hidden" name="slug" value="${post._base_path}">
+  <input type="hidden" name="options[slug]" value="${post._base_path}">
   <label class="col-md-4 control-label" for="name">Name</label>
   <div class="col-md-4">
-  <input id="name" name="name" type="text" placeholder="John Doe" class="form-control input-md" required="">
+  <input id="name" name="fields[name]" type="text" placeholder="John Doe" class="form-control input-md" required="">
   <span class="help-block">The name you want to show others</span>
   </div>
 </div>
@@ -18,7 +18,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="comment">Comment</label>
   <div class="col-md-4">
-    <textarea class="form-control" id="comment" name="comment"></textarea>
+    <textarea class="form-control" id="comment" name="fields[comment]"></textarea>
   </div>
 </div>
 

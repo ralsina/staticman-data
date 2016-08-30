@@ -1,8 +1,8 @@
-allowedFields: ['name', 'slug', 'comment']
+allowedFields: ['name', 'comment']
 branch: master
 commitMessage: "Hey human, here is a new entry."
 filename: "entry-{@timestamp}-{@slug}"
 format: yml
 moderation: true
 path: "_data/comments"
-requiredFields: ['name', 'slug', 'comment']
+requiredFields: ['name', 'comment']
