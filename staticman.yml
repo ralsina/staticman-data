@@ -1,7 +1,7 @@
 allowedFields: ['name', 'comment']
 branch: master
 commitMessage: "Hey human, here is a new entry."
-filename: "entry-{@timestamp}-{@slug}"
+filename: "entry-{options.slug}-{@timestamp}"
 format: yml
 moderation: true
 path: "_data/comments"
