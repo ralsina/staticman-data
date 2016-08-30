@@ -13,7 +13,7 @@ To see it in action, please click on the title `Sample Post ... <http://staticma
 
 If you post a comment using the form below, it will be automatically saved in GitHub `here <https://github.com/ralsina/staticman-data/tree/master/data/entry-cache/posts>`__ and then, after a few seconds, `Netlify <http://netlify.com>`__ will pick up the change and rebuild and redeploy the site.
 
-In the Nikola site, there are special "shortcodes" that will pick up that data and display the comments in the right places.
+In the Nikola site, there is a special ``post.tmpl`` that will pick up that data and display the comments in the right places.
 
 Neat, right?
 
