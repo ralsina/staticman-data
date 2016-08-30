@@ -32,3 +32,17 @@
 
 </fieldset>
 </form>
+
+% for k, v in site.GLOBAL_CONTEXT['data'].items():
+% if post._base_path in k:
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Comment by: ${v['name']}</h3>
+  </div>
+  <div class="panel-body">
+    ${v['comment']}
+  </div>
+</div>
+% endif
+% endfor
