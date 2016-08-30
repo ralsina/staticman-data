@@ -21,7 +21,3 @@ Thanks Netlify and Staticman for an awesome job!
 
 PD: There will be a description of how all the magic happens in a few days, but here's `the code <https://github.com/ralsina/staticman-data>`__ if you want to start guessing, and here's `how the automatic rebuild happens <https://getnikola.com/blog/from-zero-to-nikola-in-one-minute-without-installing-anything.html>`__
 
-.. raw:: html
-
-   {{% staticman-comments %}}
-
