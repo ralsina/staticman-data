@@ -4,5 +4,5 @@ commitMessage: "Hey human, here is a new entry."
 filename: "entry-{options.slug}-{@timestamp}"
 format: yml
 moderation: false
-path: "_data/comments"
+path: "data"
 requiredFields: ['name', 'comment']
