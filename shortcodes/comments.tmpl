@@ -1,69 +1,34 @@
-  <form class="js-form form" method="post" action="https://api.staticman.net/v1/entry/ralsina/staticman-data/master">
-  <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
-  <fieldset class="field-group">
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="text" id="movie-form[name]" name="fields[name]"/>
-      <label class="mdl-textfield__label" for="movie-form[name]">Your name</label>
-    </div>
-  </fieldset>
+<form class="form-horizontal">
+<fieldset>
 
-  <fieldset class="field-group" style="display: none">
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="text" id="movie-form[address]" name="fields[address]"/>
-      <label class="mdl-textfield__label" for="movie-form[address]">Address</label>
-    </div>
-  </fieldset>
+<!-- Form Name -->
+<legend>Leave a comment</legend>
 
-  <fieldset class="field-group">
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="text" id="movie-form[title]" name="fields[title]"/>
-      <label class="mdl-textfield__label" for="movie-form[title]">Movie title</label>
-    </div>
-  </fieldset>
+<!-- Text input-->
+<div class="form-group">
+  <input type="hidden" name="slug" value="${post._base_path}">
+  <label class="col-md-4 control-label" for="name">Name</label>
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" placeholder="John Doe" class="form-control input-md" required="">
+  <span class="help-block">The name you want to show others</span>
+  </div>
+</div>
 
-  <fieldset class="field-group">
-    <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield">
-      <textarea class="mdl-textfield__input" name="fields[description]" type="text" rows= "3" id="movie-form[description]"></textarea>
-      <label class="mdl-textfield__label" for="movie-form[description]">Your review. Markdown is allowed.</label>
-    </div>
-  </fieldset>
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="comment">Comment</label>
+  <div class="col-md-4">
+    <textarea class="form-control" id="comment" name="comment"></textarea>
+  </div>
+</div>
 
-  <fieldset class="field-group rating-select">
-    <span>Rating:</span>
-    <!-- Rating stars -->
-    <label class="rating-radio-label" for="movie-form[star-1]">
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="1" name="fields[rating]" id="movie-form[star-1]" checked>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-success">Submit</button>
+  </div>
+</div>
 
-    <label class="rating-radio-label" for="movie-form[star-2]">
-      <i class="material-icons rating-star rating-radio-star--off">star_border</i>
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="2" name="fields[rating]" id="movie-form[star-2]">
-
-    <label class="rating-radio-label" for="movie-form[star-3]">
-      <i class="material-icons rating-star rating-radio-star--off">star_border</i>
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="3" name="fields[rating]" id="movie-form[star-3]">
-
-    <label class="rating-radio-label" for="movie-form[star-4]">
-      <i class="material-icons rating-star rating-radio-star--off">star_border</i>
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="4" name="fields[rating]" id="movie-form[star-4]">
-
-    <label class="rating-radio-label" for="movie-form[star-5]">
-      <i class="material-icons rating-star rating-radio-star--off">star_border</i>
-      <i class="material-icons rating-star rating-radio-star--on">star</i>
-    </label>
-    <input class="rating-radio" type="radio" value="5" name="fields[rating]" id="movie-form[star-5]">
-  </fieldset>
-  
-  <fieldset class="field-group">
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-      Submit
-    </button>
-  </fieldset>
-  </form>
+</fieldset>
+</form>
