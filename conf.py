@@ -1112,7 +1112,7 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
-# BODY_END = ""
+BODY_END = '<script src="/assets/js/staticman-comments.js"></script>'
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.
