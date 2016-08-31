@@ -23,6 +23,9 @@ $(document).ready(function() {
             $('button#commentSubmit').removeAttr('disabled');
             if (data['success'] === true) {
                 alert("Comment added! It might take a while to appear on the site.");
+                // Clear form fields on successful submission
+                jqThis.find('input#commentName').val('');
+                jqThis.find('textarea#commentText').val('');
             } else {
                 alert("Failed to add comment! Reason:\n" + data.responseText);
             }
