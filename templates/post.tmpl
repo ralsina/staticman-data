@@ -41,7 +41,7 @@
     </aside>
     % if not post.meta('nocomments') and site_has_comments:
         <section class="comments hidden-print">
-            <form class="form-horizontal" method=POST action="https://api.staticman.net/v2/entry/ralsina/staticman-data/master">
+            <form class="form-horizontal staticman-comment-form" method="POST" action="https://api.staticman.net/v2/entry/ralsina/staticman-data/master">
             <fieldset>
 
             <!-- Form Name -->
@@ -50,18 +50,18 @@
             <!-- Text input-->
             <div class="form-group">
             <input type="hidden" name="options[slug]" value="${post._base_path}">
-            <label class="col-md-4 control-label" for="name">Name</label>
+            <label class="col-md-4 control-label" for="commentName">Name</label>
             <div class="col-md-4">
-            <input id="name" name="fields[name]" type="text" placeholder="John Doe" class="form-control input-md" required="">
+            <input id="commentName" name="fields[name]" type="text" placeholder="John Doe" class="form-control input-md" required="">
             <span class="help-block">The name you want to show others</span>
             </div>
             </div>
 
             <!-- Textarea -->
             <div class="form-group">
-            <label class="col-md-4 control-label" for="comment">Comment</label>
+            <label class="col-md-4 control-label" for="commentText">Comment</label>
             <div class="col-md-4">
-                <textarea class="form-control" id="comment" name="fields[comment]"></textarea>
+                <textarea class="form-control" id="commentText" name="fields[comment]" required></textarea>
             </div>
             </div>
 
@@ -69,7 +69,7 @@
             <div class="form-group">
             <label class="col-md-4 control-label" for="submit"></label>
             <div class="col-md-4">
-                <button id="submit" name="submit" class="btn btn-success">Submit</button>
+                <button id="commentSubmit" class="btn btn-primary" name="submit" class="btn btn-success">Submit</button>
             </div>
             </div>
 
