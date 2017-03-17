@@ -1,0 +1,16 @@
+_id: 1cac6990-0b2b-11e7-b927-6162ddbd5530
+name: Mark Down
+comment: |-
+  ## Code Test
+
+  ```Python
+  def fib(n):
+      a, b = 0, 1
+      while a < n:
+          print(a, end=' ')
+          a, b = b, a+b
+      print()
+
+  fib(1000)
+  ```
+date: '2017-03-17T16:02:25.512Z'
