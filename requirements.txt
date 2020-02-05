@@ -20,5 +20,5 @@ requests==2.11.1
 six==1.10.0
 Unidecode==0.4.19
 Yapsy==1.11.223
-PyYAML==3.11
+PyYAML==5.1
 -e git://github.com/getnikola/nikola.git#egg=nikola
