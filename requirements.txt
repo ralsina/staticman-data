@@ -5,7 +5,7 @@ docutils==0.12
 doit==0.29.0
 husl==4.0.3
 Logbook==1.0.0
-lxml==3.6.4
+lxml==4.6.3
 Mako==1.0.4
 Markdown==2.6.6
 MarkupSafe==0.23
